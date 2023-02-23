@@ -6,5 +6,7 @@ The starter files for building [the Salesboard app](https://scrimba.com/scrim/co
 ## Instructions
 Please fork this repo...
 
+https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources
+
 ### Figma design file
 https://scrimba.com/links/figma-salesboard
