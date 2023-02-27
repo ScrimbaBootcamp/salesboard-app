@@ -1,44 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <title>Salesboard</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <title></title>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <h1>Salesboard 🔔</h1>
-        <div>
-            <img src="./images/picture.jpg" alt="happy person">
-        </div>
-        <section class="button-container">
-            <button class="button-star" id="button-star"></button>
-            <button class="button-fire" id="button-fire"></button>
+      <h1>Salesboard 🔔</h1>
+      <div>
+        <img src="./images/business-cat.png" alt="A headshot of a black cat
+        wearing a blue and yellow plaid tie>
+      </div>
+      <section class="button-container">
+        <button class="button-star" id="button-star"></button>
+        <button class="button-fire" id="button-fire"></button>
+      </section>
+      <main>
+        <section>
+          <h2>Live Sales</h2>
+          <div class="sales-field" id="sales-field"></div>
         </section>
-        <main>
-            <section>
-                <h2>Live Sales</h2>
-                <div class="sales-field" id="sales-field"></div>
-            </section>
-            <section>
-                <h2>Live Achievements</h2>
-                <div class="achievements-field" id="achievements-field"></div>
-            </section>
-            <section>
-                <div>
-                    <h2>Total Revenue</h2>
-                    <div class="revinue-field" id="revinue-field"></div>
-                </div>
-                <div>
-                    <h2>Total Commision</h2>
-                    <div class="commision-field" id="commision-field"></div>
-                </div>
-            </section>
-        </main>
+        <section>
+          <h2>Live Achievements</h2>
+          <div class="achievements-field" id="achievements-field"></div>
+        </section>
+        <section>
+          <div>
+            <h2>Total Revenue</h2>
+            <div class="revinue-field" id="revinue-field"></div>
+          </div>
+          <div>
+            <h2>Total Commision</h2>
+            <div class="commision-field" id="commision-field"></div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
