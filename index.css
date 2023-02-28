@@ -31,30 +31,31 @@ body {
 }
 
 .container {
-  background-color: var(--black);
   width: 90vw;
+  background-color: var(--black);
+  border-radius: 2em;
   color: var(--white);
 }
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 img {
-    width: 30vw;
-    border-radius: 50%;
-    border: 0.75em solid var(--dark)
+  width: 30vw;
+  border-radius: 50%;
+  border: 0.75em solid var(--dark);
 }
 button {
-    padding: 0.5em 2em;
-    border: none;
-    border-radius: 0.5em;
-    background-color: var(--maroon);
-    font-size: 2rem;
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: var(--maroon);
+  font-size: 2rem;
 }
 
 #root,
