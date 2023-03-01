@@ -1,12 +1,52 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Salesboard App</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="An app used to track a user's sales." />
+
+    <title>Salesboard</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>Salesboard 🔔</h1>
+      <header>
+        <h1>Salesboard 🔔</h1>
+        <img
+          src="./images/business-cat.png"
+          alt="A headshot of a black cat
+        wearing a blue and yellow plaid tie"
+        />
+        <section class="button-container">
+          <button class="button-star" id="button-star">⭐</button>
+          <button class="button-fire" id="button-fire">🔥</button>
+        </section>
+      </header>
+      <main>
+        <section class="sales">
+          <h2>Live Sales</h2>
+          <div class="emoji-field" id="sales-field"></div>
+        </section>
+        <section class="achievements">
+          <h2>Live Achievements</h2>
+          <div class="emoji-field" id="achievements-field"></div>
+        </section>
+        <section class="dollar-amounts">
+          <div class="revenue">
+            <h2>Total Revenue</h2>
+            <div class="dollar-field" id="revinue-field">$0</div>
+          </div>
+          <div class="comission">
+            <h2>Total Commision</h2>
+            <div class="dollar-field" id="commision-field">$0</div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="index.js"></script>
   </body>
