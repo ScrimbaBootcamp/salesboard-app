@@ -1,13 +1,57 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Salesboard App</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesboard Solo Project</title>
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Salesboard 🔔</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex-col">
+    <div class="toggle">
+        <input type="checkbox" id="toggle" title="Dark/Light Mode">
+        <label id="label" class="dark-toggle toggle-background" for="toggle"></label>          
     </div>
+    <div class="flex-col container" id="container">
+        <h1>Salesboard 🔔</h1>
+        <img class="img-employee" src="./images/picture.jpg" alt="generic employee headshot"/>
+        <div>
+            <button id="btn-star" type="button"><img class="flex-col"  
+                src="./images/star.png" alt="image of a star"></button>
+            <button id="btn-fire" type="button"><img class="flex-col"
+                src="./images/fire.png" alt="image of a fire"></button>
+        </div>
+        <div class="flex-row">
+            <p class="sales-text" id="sales-text">Live Sales -&nbsp</p>
+            <p id="sales-count"></p>
+        </div>
+        <p class="display-div live" id="sales"></p>
+        <div class="flex-row">
+            <p class="achievements-text">Live Achievements -&nbsp</p>
+            <p id="achievements-count"></p>
+        </div>
+        <p class="display-div live" id="achievements"></p>
+        <div class="flex-row">
+            <div class="flex-col">
+                <p class="total-text">Total Revenue</p>
+                <div class="display-div total flex-col" id="total-revenue"></div>
+            </div>
+            <div class="flex-col">
+                <p class="total-text">Total Commission</p>
+                <div class="display-div total flex-col" id="total-commission"></div>
+            </div>
+        </div>
+        <button class="reset" id="btn-reset" type="button">Reset Sales</button>
+    </div>
+
     <script src="index.js"></script>
-  </body>
+
+</body>
 </html>
+
+
+
