@@ -3,11 +3,46 @@
   <head>
     <title>Salesboard App</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <h1>Salesboard 🔔</h1>
+    <body>
+      <div class="container">
+        <header>
+            <h1>Salesboard🔔</h1>
+            <img src="images/picture.jpg" alt="picture of salesperson" class="person-img highlight">
+        </header>
+        <div class="product-buttons">
+            <button id="star-product" class="highlight">⭐</button>
+            <button id="fire-product" class="highlight">🔥</button>
+        </div>
+        <!-- sales -->
+        <div>
+            <h3>Live sales</h3>
+            <div class="points-box highlight" id="sales-product"></div>
+        </div>
+        <!-- Achievements -->
+        <div>
+            <h3>Live Achievements</h3>
+            <div  class="points-box highlight" id="achievements"></div>
+        </div>
+        <!-- total revenue and commission -->
+        <div class="total">
+          <div>
+              <h3>Total Revenue</h3>
+              <div class="revenue-box total-box highlight"></div>
+          </div>
+          <div>
+              <h3>Total Commission</h3>
+              <div class="commission-box total-box highlight"></div>
+          </div>
+        </div>
+        <script src ="index.js"></script>
     </div>
+  </body>
+</html>  
     <script src="index.js"></script>
   </body>
 </html>
