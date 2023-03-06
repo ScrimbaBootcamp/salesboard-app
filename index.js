@@ -1,3 +1,5 @@
+// Salesboard App
+
 // Product A info
 let productA = {
     emoji: "⭐",
