@@ -1,7 +1,9 @@
 // Salesboard App
 
+// the Sales array
 let totalSales = []
 let timesClicked = 0
+
 // Product A info
 let productA = {
     emoji: "⭐",
