@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Salesboard App</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesboard App</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
   <body>
     <div class="container">
+
       <h1>Salesboard 🔔</h1>
-    </div>
-    <img src="images/picture.jpg" />
+      <img src="images/picture.jpg" class="img-photo" alt="Picture of a man" />
+
     <div class="product-btn-container">
-      <div class="product-btn-star"></div>
-      <div class="product-btn-fire"></div>
-    </div>
+      <button class="product-btn" id="btn-productA">⭐</button>
+      <button class="product-btn" id="btn-productB">🔥</button>
+    </div><!--product-btn-container-->
+
+    <div class="sales">
+      <h3>Live Sales -</h3>
+      <div class="live-sales-bar">
+      </div><!--live-sales-bar-->
+      </div><!--sales-->
+
+
+      <div class="achievements">
+        <h3>Live Achievements -</h3>
+        <div class="live-achievements-bar">
+      </div><!--live-achievements-bar-->
+    </div><!--achievements-->
+
+
+    <div class="revenue-container">
+      <div class="total-revenue">
+        <h3>Total Revenue</h3>
+        <div class="total-revenue-bar">
+        </div><!--total-revenue-bar-->
+      </div><!--total-revenue-->
+
+      <div class="total-commission">
+        <h3>Total Commission</h3>
+        <div class="total-commission-bar">
+        </div><!--total-commission-bar-->
+      </div><!--total-commission-->
+    </div><!--revenue-container-->
+
+</div><!--container-->
+  
+    </body>
     <script src="index.js"></script>
   </body>
 </html>
