@@ -1,9 +1,9 @@
 // Salesboard App
 
-let totalSales = [] // array or string?
+let totalSales = ''
 let timesClicked = 0
 let achievementsUnlocked = 0
-let achievementsBadge = [] // array or string?
+let achievementsBadge = ''
 let achievementsBadgeTwo = false
 let totalRevenue = 0
 let totalCommision = 0
