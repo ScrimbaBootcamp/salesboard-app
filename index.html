@@ -1,13 +1,50 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Salesboard App</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesboard App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+
   <body>
-    <div class="container">
+    <div class="salesboard">
       <h1>Salesboard 🔔</h1>
-    </div>
+      <img src="images/picture.jpg" alt="Picture of a man" />
+
+      <div class="product-btn-container">
+        <button id="btn-productA">⭐</button>
+        <button id="btn-productB">🔥</button>
+      </div><!--product-btn-container-->
+
+      <div class="sales-container">
+        <h3 id="sales-header">Live Sales -</h3>
+        <div class="sales-bar" id="sales-bar"></div><!--sales-bar-->
+      </div><!--sales-container-->
+
+      <div class="achievements-container">
+        <h3 id="achievements-header">Live Achievements -</h3>
+        <div class="achievements-bar" id="achievements-bar"></div><!--achievements-bar-->
+      </div><!--achievements-container-->
+
+      <div class="revenue-container">
+        <div class="total-revenue">
+          <h3>Total Revenue</h3>
+          <div class="revenue-bar" id="revenue-bar"></div><!--revenue-bar-->
+        </div><!--total-revenue-->
+
+        <div class="total-commission">
+          <h3>Total Commission</h3>
+          <div class="commission-bar" id="commision-bar"></div><!--commission-bar-->
+        </div><!--total-commission-->
+      </div><!--revenue-container-->
+    </div><!--salesboard-->
+  
+  </body>
     <script src="index.js"></script>
   </body>
 </html>
