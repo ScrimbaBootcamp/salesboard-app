@@ -2,6 +2,8 @@
 
 let totalSales = []
 let timesClicked = 0
+let achievementsUnlocked = 0
+let achievementsBadge = []
 let totalRevenue = 0
 let totalCommision = 0
 
@@ -57,6 +59,7 @@ function salesA() {
     totalCommision += productA.commision
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
+    checkAchievements()
     renderSales()
 }
 
@@ -67,6 +70,7 @@ function salesB() {
     totalCommision += productB.commision
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
+    checkAchievements()
     renderSales()
 }
 
@@ -74,6 +78,8 @@ function salesB() {
 function renderSales() {
     salesHeader.textContent = `Live Sales - ${timesClicked}`
     salesBar.textContent = totalSales
+    achievementsHeader.textContent = `Live Achievements - ${achievementsUnlocked}`
+    achievementsBar.textContent = achievementsBadge
     revenueBar.textContent = totalRevenue
     commisionBar.textContent = totalCommision
 }
@@ -87,4 +93,19 @@ function renderSales() {
 // 3. With the 15th sale (when timesClicked === 15)
 // First and third goal are easy, second goal has more to it.
 // I like to make this happen with just one variable but in first iteration I'll use a boolean which switches when goal is met
-
+function checkAchievements() {
+    if (timesClicked === 1) {
+        achievementsUnlocked += 1
+        achievementsBadge += '🔔'
+        console.log(achievementsBadge) // check
+    } else if (totalRevenue >= 2500 && timesClicked != 15) {
+        achievementsUnlocked += 1
+        achievementsBadge += '💰'
+        console.log(achievementsBadge) // check - todo: show only once
+    } else if (timesClicked === 15) {
+        achievementsUnlocked += 1
+        achievementsBadge += '🏆'
+        console.log(achievementsBadge) // check
+    }
+    return achievementsBadge
+}
