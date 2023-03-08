@@ -77,7 +77,7 @@ function updateSales() {
     renderSales()
 }
 
-// show stuff in separate function for clarity
+// Show stuff in separate function for clarity
 function renderSales() {
     salesHeader.textContent = `Live Sales - ${timesClicked}`
     salesBar.textContent = totalSales
