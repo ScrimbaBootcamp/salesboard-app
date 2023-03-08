@@ -36,9 +36,12 @@ const achievementsHeader = document.getElementById('achievements-header')
 const achievementsBar = document.getElementById('achievements-bar')
 // initally they're empty (need to refactor this when we're using local storage)
 salesBar.textContent = achievementsBar.textContent = ''
+
+// Showing the revenue and commision in the HTML
+const revenueBar = document.getElementById('revenue-bar')
+const commisionBar = document.getElementById('commision-bar')
+
 renderSales()
-
-
 
 // Sales
 // Clicking the sales buttons will:
@@ -46,6 +49,7 @@ renderSales()
 // 2. update "Live Sales" in the HTML with the content of the totalSales array
 // 3. update "Live Sales" with times either of the two buttons is clicked
 // 4. update totalRevenue and totalCommision with values set in respective product arrays
+// 5. update totalRevenue and totalCommision in the HTML with the content of their arrays
 function salesA() {
     // console.log(`product A ${productA.emoji}`) // check
     totalSales += productA.emoji
@@ -70,6 +74,8 @@ function salesB() {
 function renderSales() {
     salesHeader.textContent = `Live Sales - ${timesClicked}`
     salesBar.textContent = totalSales
+    revenueBar.textContent = totalRevenue
+    commisionBar.textContent = totalCommision
 }
 
 
