@@ -53,6 +53,7 @@ function salesA() {
     totalCommision += productA.commision
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
+    renderSales()
 }
 
 function salesB() {
@@ -62,7 +63,16 @@ function salesB() {
     totalCommision += productB.commision
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
+    renderSales()
 }
+
+// show stuff in separate function for clarity
+function renderSales() {
+    salesHeader.textContent = `Live Sales - ${timesClicked}`
+    salesBar.textContent = totalSales
+}
+
+
 
 // Achievements
 // The achievements are given on three occasions:
