@@ -58,10 +58,7 @@ function salesA() {
     totalSales += productA.emoji
     totalRevenue += productA.revenue
     totalCommision += productA.commision
-    timesClicked += 1
-    console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
-    checkAchievements()
-    renderSales()
+    updateSales()
 }
 
 function salesB() {
@@ -69,6 +66,11 @@ function salesB() {
     totalSales += productB.emoji
     totalRevenue += productB.revenue
     totalCommision += productB.commision
+    updateSales()
+}
+
+// Update the sales stats
+function updateSales() {
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
     checkAchievements()
