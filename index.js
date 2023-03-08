@@ -3,6 +3,8 @@
 // the Sales array
 let totalSales = []
 let timesClicked = 0
+let totalRevenue = 0
+let totalCommision = 0
 
 // Product A info
 let productA = {
@@ -44,21 +46,28 @@ salesBar.textContent = achievementsBar.textContent = '';
 // 1. update totalSales array with sales
 // 2. update "Live Sales" in the HTML with the content of the totalSales array
 // 3. update "Live Sales" with times either of the two buttons is clicked
+// 4. update totalRevenue and totalCommision with values set in respective product arrays
 function salesA() {
     // console.log(`product A ${productA.emoji}`); // check
     totalSales += productA.emoji;
+    totalRevenue += productA.revenue;
+    totalCommision += productA.commision;
     timesClicked += 1;
     console.log(totalSales, timesClicked) // check
     salesBar.textContent = `${totalSales} – ${timesClicked}`;
+    console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
 };
 
 function salesB() {
     // console.log(`product B ${productB.emoji}`); // check
     totalSales += productB.emoji;
+    totalRevenue += productB.revenue;
+    totalCommision += productB.commision;
     timesClicked += 1;
     console.log(totalSales, timesClicked) // check
     salesBar.textContent = `${totalSales} – ${timesClicked}`;
 };// The achievements are given on three occasions:
+    console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
 // 1. With first sale (when timesClicked === 1)
 // 2. When revenue reaches $2500 (when totalRevenue >= 2500) - beware: this should ONLY happen once; only when this goal is reached. Boolean to set?
 // 3. With the 15th sale (when timesClicked === 15)
