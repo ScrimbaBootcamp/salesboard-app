@@ -29,8 +29,8 @@ const pbBtn = document.getElementById('btn-productB')
 paBtn.textContent = productA.emoji
 pbBtn.textContent = productB.emoji
 // Let them listen for clicks & when they're hit fire a sales function
-paBtn.addEventListener('click', function () { salesA() })
-pbBtn.addEventListener('click', function () { salesB() })
+paBtn.addEventListener('click', function () { fixSale(productA) })
+pbBtn.addEventListener('click', function () { fixSale(productB) })
 
 // Showing the sales results in the HTML
 const salesHeader = document.getElementById('sales-header')
@@ -53,22 +53,11 @@ renderSales()
 // 3. update "Live Sales" with times either of the two buttons is clicked
 // 4. update totalRevenue and totalCommision with values set in respective product arrays
 // 5. update totalRevenue and totalCommision in the HTML with the content of their arrays
-function salesA() {
+function fixSale(object) {
     // console.log(`product A ${productA.emoji}`) // check
-    totalSales += productA.emoji
-    totalRevenue += productA.revenue
-    totalCommision += productA.commision
-    timesClicked += 1
-    console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
-    checkAchievements()
-    renderSales()
-}
-
-function salesB() {
-    // console.log(`product B ${productB.emoji}`) // check
-    totalSales += productB.emoji
-    totalRevenue += productB.revenue
-    totalCommision += productB.commision
+    totalSales += object.emoji
+    totalRevenue += object.revenue
+    totalCommision += object.commision
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
     checkAchievements()
