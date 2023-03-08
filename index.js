@@ -110,5 +110,4 @@ function checkAchievements() {
         achievementsBadge += '🏆'
         console.log(achievementsBadge) // check
     }
-    return achievementsBadge // is this needed? it also works without return...
 }
