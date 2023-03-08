@@ -12,37 +12,37 @@
 </head>
 
   <body>
-    <div class="container">
+    <div class="salesboard">
       <h1>Salesboard 🔔</h1>
-      <img src="images/picture.jpg" class="img-photo" alt="Picture of a man" />
+      <img src="images/picture.jpg" alt="Picture of a man" />
 
       <div class="product-btn-container">
-        <button class="product-btn" id="btn-productA">⭐</button>
-        <button class="product-btn" id="btn-productB">🔥</button>
+        <button id="btn-productA">⭐</button>
+        <button id="btn-productB">🔥</button>
       </div><!--product-btn-container-->
 
-      <div class="sales">
-        <h3>Live Sales -</h3>
-        <div class="live-sales-bar"></div><!--live-sales-bar-->
-      </div><!--sales-->
+      <div class="sales-container">
+        <h3 id="sales-header">Live Sales -</h3>
+        <div class="sales-bar" id="sales-bar"></div><!--sales-bar-->
+      </div><!--sales-container-->
 
-      <div class="achievements">
-        <h3>Live Achievements -</h3>
-        <div class="live-achievements-bar"></div><!--live-achievements-bar-->
-      </div><!--achievements-->
+      <div class="achievements-container">
+        <h3 id="achievements-header">Live Achievements -</h3>
+        <div class="achievements-bar" id="achievements-bar"></div><!--achievements-bar-->
+      </div><!--achievements-container-->
 
       <div class="revenue-container">
         <div class="total-revenue">
           <h3>Total Revenue</h3>
-          <div class="total-revenue-bar"></div><!--total-revenue-bar-->
+          <div class="revenue-bar" id="revenue-bar"></div><!--revenue-bar-->
         </div><!--total-revenue-->
 
         <div class="total-commission">
           <h3>Total Commission</h3>
-          <div class="total-commission-bar"></div><!--total-commission-bar-->
+          <div class="commission-bar" id="commision-bar"></div><!--commission-bar-->
         </div><!--total-commission-->
       </div><!--revenue-container-->
-    </div><!--container-->
+    </div><!--salesboard-->
   
   </body>
     <script src="index.js"></script>
