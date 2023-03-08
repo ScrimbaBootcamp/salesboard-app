@@ -58,4 +58,10 @@ function salesB() {
     timesClicked += 1;
     console.log(totalSales, timesClicked) // check
     salesBar.textContent = `${totalSales} – ${timesClicked}`;
-};
+};// The achievements are given on three occasions:
+// 1. With first sale (when timesClicked === 1)
+// 2. When revenue reaches $2500 (when totalRevenue >= 2500) - beware: this should ONLY happen once; only when this goal is reached. Boolean to set?
+// 3. With the 15th sale (when timesClicked === 15)
+// First and third goal are easy, second goal has more to it.
+// I like to make this happen with just one variable but in first iteration I'll use a boolean which switches to false when goal is met
+
