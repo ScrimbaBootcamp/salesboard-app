@@ -4,6 +4,7 @@ let totalSales = []
 let timesClicked = 0
 let achievementsUnlocked = 0
 let achievementsBadge = []
+let achievementsBadgeTwo = false
 let totalRevenue = 0
 let totalCommision = 0
 
@@ -98,14 +99,16 @@ function checkAchievements() {
         achievementsUnlocked += 1
         achievementsBadge += '🔔'
         console.log(achievementsBadge) // check
-    } else if (totalRevenue >= 2500 && timesClicked != 15) {
+    } else if (totalRevenue >= 2500 && achievementsBadgeTwo === false) {
         achievementsUnlocked += 1
         achievementsBadge += '💰'
-        console.log(achievementsBadge) // check - todo: show only once
+        achievementsBadgeTwo = true
+        console.log(achievementsBadgeTwo) // check
+        console.log(achievementsBadge) // check
     } else if (timesClicked === 15) {
         achievementsUnlocked += 1
         achievementsBadge += '🏆'
         console.log(achievementsBadge) // check
     }
-    return achievementsBadge
+    return achievementsBadge // is this needed? it also works without return...
 }
