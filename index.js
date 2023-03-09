@@ -1,9 +1,9 @@
 // Salesboard App
 
-let totalSales = [] // array or string?
+let totalSales = ''
 let timesClicked = 0
 let achievementsUnlocked = 0
-let achievementsBadge = [] // array or string?
+let achievementsBadge = ''
 let achievementsBadgeTwo = false
 let totalRevenue = 0
 let totalCommision = 0
@@ -58,10 +58,7 @@ function salesA() {
     totalSales += productA.emoji
     totalRevenue += productA.revenue
     totalCommision += productA.commision
-    timesClicked += 1
-    console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
-    checkAchievements()
-    renderSales()
+    updateSales()
 }
 
 function salesB() {
@@ -69,13 +66,18 @@ function salesB() {
     totalSales += productB.emoji
     totalRevenue += productB.revenue
     totalCommision += productB.commision
+    updateSales()
+}
+
+// Update the sales stats
+function updateSales() {
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
     checkAchievements()
     renderSales()
 }
 
-// show stuff in separate function for clarity
+// Show stuff in separate function for clarity
 function renderSales() {
     salesHeader.textContent = `Live Sales - ${timesClicked}`
     salesBar.textContent = totalSales
@@ -110,5 +112,4 @@ function checkAchievements() {
         achievementsBadge += '🏆'
         console.log(achievementsBadge) // check
     }
-    return achievementsBadge // is this needed? it also works without return...
 }
