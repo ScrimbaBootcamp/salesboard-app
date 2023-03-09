@@ -1,9 +1,9 @@
 // Salesboard App
 
-let totalSales = [] // array or string?
+let totalSales = ''
 let timesClicked = 0
 let achievementsUnlocked = 0
-let achievementsBadge = [] // array or string?
+let achievementsBadge = ''
 let achievementsBadgeTwo = false
 let totalRevenue = 0
 let totalCommision = 0
@@ -18,8 +18,6 @@ let productB = {
     revenue: 300,
     commision: 75
 }
-
-
 
 // Setup
 // Some interaction: the sales buttons
@@ -64,7 +62,7 @@ function fixSale(object) {
     renderSales()
 }
 
-// show stuff in separate function for clarity
+// Show stuff in separate function for clarity
 function renderSales() {
     salesHeader.textContent = `Live Sales - ${timesClicked}`
     salesBar.textContent = totalSales
@@ -73,7 +71,6 @@ function renderSales() {
     revenueBar.textContent = totalRevenue
     commisionBar.textContent = totalCommision
 }
-
 
 
 // Achievements
@@ -99,5 +96,4 @@ function checkAchievements() {
         achievementsBadge += '🏆'
         console.log(achievementsBadge) // check
     }
-    return achievementsBadge // is this needed? it also works without return...
 }
