@@ -51,11 +51,11 @@ renderSales()
 // 3. update "Live Sales" with times either of the two buttons is clicked
 // 4. update totalRevenue and totalCommision with values set in respective product arrays
 // 5. update totalRevenue and totalCommision in the HTML with the content of their arrays
-function fixSale(object) {
+function fixSale(salesProduct) {
     // console.log(`product A ${productA.emoji}`) // check
-    totalSales += object.emoji
-    totalRevenue += object.revenue
-    totalCommision += object.commision
+    totalSales += salesProduct.emoji
+    totalRevenue += salesProduct.revenue
+    totalCommision += salesProduct.commision
     timesClicked += 1
     console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
     checkAchievements()
