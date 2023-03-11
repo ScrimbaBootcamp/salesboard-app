@@ -6,17 +6,17 @@ let achievementsUnlocked = 0
 let achievementsBadge = ''
 let achievementsBadgeTwo = false
 let totalRevenue = 0
-let totalCommision = 0
+let totalCommission = 0
 
 let productA = {
     emoji: "⭐",
     revenue: 200,
-    commision: 50
+    commission: 50
 }
 let productB = {
     emoji: "🔥",
     revenue: 300,
-    commision: 75
+    commission: 75
 }
 
 // Setup
@@ -38,9 +38,9 @@ const achievementsBar = document.getElementById('achievements-bar')
 // initally they're empty (need to refactor this when we're using local storage)
 salesBar.textContent = achievementsBar.textContent = ''
 
-// Showing the revenue and commision in the HTML
+// Showing the revenue and commission in the HTML
 const revenueBar = document.getElementById('revenue-bar')
-const commisionBar = document.getElementById('commision-bar')
+const commissionBar = document.getElementById('commission-bar')
 
 renderSales()
 
@@ -49,15 +49,15 @@ renderSales()
 // 1. update totalSales array with sales
 // 2. update "Live Sales" in the HTML with the content of the totalSales array
 // 3. update "Live Sales" with times either of the two buttons is clicked
-// 4. update totalRevenue and totalCommision with values set in respective product arrays
-// 5. update totalRevenue and totalCommision in the HTML with the content of their arrays
+// 4. update totalRevenue and totalCommission with values set in respective product arrays
+// 5. update totalRevenue and totalCommission in the HTML with the content of their arrays
 function fixSale(salesProduct) {
     // console.log(`product A ${productA.emoji}`) // check
     totalSales += salesProduct.emoji
     totalRevenue += salesProduct.revenue
-    totalCommision += salesProduct.commision
+    totalCommission += salesProduct.commission
     timesClicked += 1
-    console.log(totalSales, totalRevenue, totalCommision, timesClicked) // check
+    console.log(totalSales, totalRevenue, totalCommission, timesClicked) // check
     checkAchievements()
     renderSales()
 }
