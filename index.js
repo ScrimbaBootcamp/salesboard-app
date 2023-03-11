@@ -69,7 +69,7 @@ function renderSales() {
     achievementsHeader.textContent = `Live Achievements - ${achievementsUnlocked}`
     achievementsBar.textContent = achievementsBadge
     revenueBar.textContent = totalRevenue
-    commisionBar.textContent = totalCommision
+    commissionBar.textContent = totalCommission
 }
 
 
