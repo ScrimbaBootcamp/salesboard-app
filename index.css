@@ -7,16 +7,19 @@ DARK: #44354A
 COLOR: #9E4770
 */
 
+
+/* Setting the base font-size to 10px is not recommended. Best is to keep it to the default 100% (1rem ~ 16px) */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
     background: #201A23;
-    font-family: 'Poppins';
+    font-family: 'Poppins'; /* a fallback value is good practice */
     color: #FBFBFB;
 } 
 
+/* I wouldn't set the modal to fixed position to let normal flow intact, that way the content is always accessible */
 .salesboard {
     position: fixed;
     top: 0;
@@ -26,7 +29,8 @@ html, body {
     margin: auto;
     text-align: center;
     width: 50vw;
-
+    
+    /* As the normal flow puts all elements in a vertical rythm we don't need to flex this element */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,9 +41,10 @@ html, body {
     margin-bottom: 2rem;
 }
 
+/* To prevent unwanted size-shifts when you change the root size a fixed unit on border & width works better */
 .salesboard-picture {
     border: 1rem solid #44354A;
-    border-radius: 14.5rem;
+    border-radius: 14.5rem; /* this can be set to 50% so its always round no matter the size of the element  */
     width: 21.9rem;
     margin-bottom: 4.5rem;
 }
@@ -52,6 +57,7 @@ html, body {
     border-radius: 1rem;
 }
 
+/* line-height can be best set in relative unit (or unitless) */
 .title {
     font-size: 3rem;
     font-style: normal;
@@ -63,3 +69,76 @@ html, body {
     background: #44354A;
     border-radius: 5rem;
 }
+
+
+/* Suggestions on styling */
+
+/*
+html {
+    background: #201A23;
+    font-family: 'Poppins', sans-serif;
+    color: #FBFBFB;
+} 
+
+.salesboard {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    border: 10px solid #44354A;
+    border-radius: 50%;
+    width: 220px;
+    margin-bottom: 2rem;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 60px;
+    width: 150px;
+    background: #9E4770;
+    border-radius: 10px;
+}
+
+button:active {
+    scale: 0.98;
+}
+
+.product-btn-container,
+.revenue-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.bar {
+    background: #44354A;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    min-height: 3rem;
+    padding: 0 2rem;
+}
+
+.sales-bar,
+.achievements-bar {
+    text-align: left;
+}
+
+.total-revenue,
+.total-commission {
+    width: 100%;
+} */
