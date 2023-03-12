@@ -36,13 +36,13 @@ html, body {
     align-items: center;
 }
 
-.salesboard-title {
+h1 {
     font-size: 4.8rem;
     margin-bottom: 2rem;
 }
 
 /* To prevent unwanted size-shifts when you change the root size a fixed unit on border & width works better */
-.salesboard-picture {
+img {
     border: 1rem solid #44354A;
     border-radius: 14.5rem; /* this can be set to 50% so its always round no matter the size of the element  */
     width: 21.9rem;
