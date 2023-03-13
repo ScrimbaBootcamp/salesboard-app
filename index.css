@@ -20,14 +20,14 @@ body{
     border:3px solid white;
 }
 h1{
-    font-size: 48px;
-    line-height: 72px;
+    font-size: 3rem; /* 48px */
+    line-height: 4.5rem;/*72px; */
     margin-bottom: 0px;
     margin-top: 46px;
 }
 h3{
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 2rem; /*30px; */
+    line-height: 3rem;/*45px;*/
     margin-bottom: 0px;
 }
 h1:hover,  h3:hover, button:hover{
@@ -46,8 +46,8 @@ button{
     height: 80px;
     background-color: #9E4770;
     border-radius: 10px;
-    line-height: 54px;
-    font-size: 45px;
+    line-height: 4.5rem; /*54px;*/
+    font-size: 3rem;  /*45px;*/
 }
 .product-buttons{
     display: flex;
