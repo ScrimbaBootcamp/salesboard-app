@@ -1,13 +1,82 @@
 /*
 COLOR PALETTE
-
+⭐
+🔥
+💰
 BLACK: #201A23
 WHITE: #FBFBFB
 DARK: #44354A
 COLOR: #9E4770
 */
 
-html, body {
-    margin: 0;
-    padding: 0;
+body{
+    text-align: center;
+    background-color: #201A23;
+    color: #FBFBFB;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    border:3px solid white;
+}
+h1{
+    font-size: 3rem; /* 48px */
+    line-height: 4.5rem;/*72px; */
+    margin-bottom: 0px;
+    margin-top: 46px;
+}
+h3{
+    font-size: 2rem; /*30px; */
+    line-height: 3rem;/*45px;*/
+    margin-bottom: 0px;
+}
+h1:hover,  h3:hover, button:hover{
+    text-decoration: underline solid #38BDF8;
+
+}
+.person-img{
+    border:10px solid #44354A;
+    border-radius: 50%;
+    width: 219px;
+    height: 219px;
+}
+
+button{
+    width: 188px;
+    height: 80px;
+    background-color: #9E4770;
+    border-radius: 10px;
+    line-height: 4.5rem; /*54px;*/
+    font-size: 3rem;  /*45px;*/
+}
+.product-buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+    margin-top: 45px;
+}
+.highlight:hover{
+    border:10px solid #38BDF8;
+}
+.points-box{
+    width: 805px;
+    height: 67px;
+    background-color: #44354A;
+    border-radius: 50px;
+    border:1px solid #44354A;
+    margin: 0px auto;
+}
+.total{
+    display:flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-bottom: 70px;
+}
+.total-box{
+    width: 389px;
+    height: 86px;
+    background-color: #44354A;
+    border-radius: 50px;
+    border:1px solid #44354A;
+    margin: 0px auto;
 }
