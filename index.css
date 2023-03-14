@@ -7,13 +7,13 @@ DARK: #44354A
 COLOR: #9E4770
 
 LIGHT MODE
-BLACK: ##ddd6e0
+BLACK: #ddd6e0
 LIGHT: #bfafc6
 */
 
 
 
-html, body {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,6 +36,7 @@ img {
     margin-bottom: 25px;
 }
 
+/*Buttons*/
 button {
     background: #9E4770;
     height: 80px;
@@ -50,12 +51,28 @@ button:active {
     scale: 0.98;
 }
 
+i.fa-solid {
+    position: absolute;
+    top: 1rem;
+    right: 15rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    width: 2rem;
+    height: 2rem;
+    background: #44354A;
+    color: #FBFBFB;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
+/*Headings*/
 h3 {
     font-size: 1.5rem;
     margin-bottom: 5px;
 }
 
+/*Containers*/
 .bar {
     background: #44354A;
     border-radius: 2.5rem;
@@ -90,20 +107,21 @@ h3 {
     font-size: 2.5rem;
 }
 
+
+/*Light mode*/
 .light {
-    background-color: #bfafc6;
+    background: #bfafc6;
+    color: #44354A;
 }
 
-.toggle-mode {
-    position: fixed;
-    top: 2rem;
-    right: 20rem;
-    width: 1rem;
-    height: 1rem;
-    background: #44354A;
-    color: #FBFBFB;
-    padding: 0.5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 3rem;
+body.light img {
+    border: 10px solid #a791b1;
+}
+
+body.light button {
+    background: #B86089;
+}
+
+body.light .bar {
+    background: #a791b1;
 }
