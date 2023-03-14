@@ -110,6 +110,14 @@ h3 {
 
 
 /*Light mode*/
+body, 
+img,
+button,
+.bar,
+i.fa-solid {
+    transition: background-color 0.5s, color 0.5s, border 0.5s; 
+}
+
 body.light {
     background: #bfafc6;
     color: #44354A;
