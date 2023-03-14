@@ -6,9 +6,6 @@ WHITE: #FBFBFB
 DARK: #44354A
 COLOR: #9E4770
 
-LIGHT MODE
-BLACK: #ddd6e0
-LIGHT: #bfafc6
 */
 
 
@@ -113,13 +110,13 @@ h3 {
 
 
 /*Light mode*/
-.light {
+body.light {
     background: #bfafc6;
     color: #44354A;
 }
 
 body.light img {
-    border: 10px solid #a791b1;
+    border: 10px solid #977ca4;
 }
 
 body.light button {
@@ -127,5 +124,11 @@ body.light button {
 }
 
 body.light .bar {
-    background: #a791b1;
+    background: #977ca4;
+    /*background: #a791b1;*/
+}
+
+body.light i.fa-solid {
+    color: #44354A;
+    background: #977ca4;
 }
