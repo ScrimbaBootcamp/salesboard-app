@@ -22,6 +22,7 @@ html, body {
    text-align: center;
    max-width: 940px;
    margin: 0 auto;
+   padding: 0 15rem;
 }
 
 img {
@@ -45,9 +46,6 @@ button:active {
     scale: 0.98;
 }
 
-#btn-productA {
-    margin-right: 10px;
-}
 
 h3 {
     font-size: 1.5rem;
@@ -56,10 +54,10 @@ h3 {
 
 .bar {
     background: #44354A;
-    border-radius: 1.5rem;
+    border-radius: 2.5rem;
     font-size: 2rem;
-    line-height: 3rem;
-    min-height: 3rem;
+    line-height: 3.5rem;
+    min-height: 3.5rem;
 }
 
 #sales-bar,
@@ -68,44 +66,23 @@ h3 {
     padding: 5px 1.5rem;
 }
 
-.revenue-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.total-revenue,
-.total-commision {
-    width: 20rem;
-}
-
-
-/*
-
-
-button {
-    border: 0;
-    cursor: pointer;
-    font-size: 2rem;
-    height: 60px;
-    width: 150px;
-    background: #9E4770;
-    border-radius: 10px;
-}
-
-button:active {
-    scale: 0.98;
-}
-
 .product-btn-container,
 .revenue-container {
     display: flex;
-    gap: 1rem;
     justify-content: center;
+    gap: 1rem;
 }
-
 
 .total-revenue,
 .total-commission {
     width: 100%;
-} */
+    
+}
+
+.revenue-bar,
+.commission-bar {
+    height: 5rem;
+    border-radius: 5rem;
+    line-height: 2;
+    font-size: 2.5rem;
+}
