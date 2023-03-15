@@ -7,59 +7,85 @@ DARK: #44354A
 COLOR: #9E4770
 */
 
+
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
     background: #201A23;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif; 
     color: #FBFBFB;
 } 
 
 .salesboard {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    width: 50vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   text-align: center;
+   max-width: 58.75rem;
+   margin: 0 auto;
+   padding: 0 2rem 2rem;
 }
 
-.salesboard-title {
-    font-size: 4.8rem;
-    margin-bottom: 2rem;
+img {
+    border: 10px solid #44354A;
+    border-radius: 50%;
+    width: 13.75rem;
+    margin-bottom: 1.562rem;
 }
 
-.salesboard-picture {
-    border: 1rem solid #44354A;
-    border-radius: 14.5rem;
-    width: 21.9rem;
-    margin-bottom: 4.5rem;
-}
-
-#btn-productA,
-#btn-productB {
-    width: 20rem;
-    height: 8rem;
+button {
     background: #9E4770;
-    border-radius: 1rem;
+    height: 5rem;
+    width: 11.875rem;
+    font-size: 2.812rem;
+    border: 0;
+    border-radius: .625rem;
+    cursor: pointer;
 }
 
-.title {
+button:active {
+    scale: 0.98;
+}
+
+h1{
     font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 45px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3125rem;
 }
 
 .bar {
     background: #44354A;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    min-height: 3.5rem;
+}
+
+#sales-bar,
+#achievements-bar {
+    text-align: left;
+    padding: 0.3125rem 1.5rem;
+}
+
+.product-btn-container,
+.revenue-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.total-revenue,
+.total-commission {
+    width: 100%;
+    
+}
+
+.revenue-bar,
+.commission-bar {
+    height: 5rem;
     border-radius: 5rem;
+    line-height: 2;
+    font-size: 2.5rem;
 }
