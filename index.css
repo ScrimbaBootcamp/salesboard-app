@@ -20,7 +20,7 @@ html, body {
 
 .salesboard {
    text-align: center;
-   max-width: 940px;
+   max-width: 58.75rem;
    margin: 0 auto;
    padding: 0 15rem;
 }
@@ -28,17 +28,17 @@ html, body {
 img {
     border: 10px solid #44354A;
     border-radius: 50%;
-    width: 220px;
-    margin-bottom: 25px;
+    width: 13.75rem;
+    margin-bottom: 1.562rem;
 }
 
 button {
     background: #9E4770;
-    height: 80px;
-    width: 190px;
-    font-size: 45px;
+    height: 5rem;
+    width: 11.875rem;
+    font-size: 2.812rem;
     border: 0;
-    border-radius: 10px;
+    border-radius: .625rem;
     cursor: pointer;
 }
 
@@ -49,7 +49,7 @@ button:active {
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 .bar {
@@ -63,7 +63,7 @@ h3 {
 #sales-bar,
 #achievements-bar {
     text-align: left;
-    padding: 5px 1.5rem;
+    padding: 0.3125rem 1.5rem;
 }
 
 .product-btn-container,
