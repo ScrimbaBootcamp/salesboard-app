@@ -22,7 +22,7 @@ html, body {
    text-align: center;
    max-width: 58.75rem;
    margin: 0 auto;
-   padding: 0 15rem;
+   padding: 0 2rem 2rem;
 }
 
 img {
@@ -46,6 +46,9 @@ button:active {
     scale: 0.98;
 }
 
+h1{
+    font-size: 3rem;
+}
 
 h3 {
     font-size: 1.5rem;
