@@ -5,17 +5,16 @@ BLACK: #201A23
 WHITE: #FBFBFB
 DARK: #44354A
 COLOR: #9E4770
+
 */
 
-
-
-html, body {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #201A23;
     font-family: 'Poppins', sans-serif; 
     color: #FBFBFB;
+    background: #201A23;
 } 
 
 .salesboard {
@@ -26,19 +25,20 @@ html, body {
 }
 
 img {
-    border: 10px solid #44354A;
+    border: 0.625rem solid #44354A;
     border-radius: 50%;
     width: 13.75rem;
-    margin-bottom: 1.562rem;
+    margin-bottom: 1.5rem;
 }
 
+/*Buttons*/
 button {
     background: #9E4770;
     height: 5rem;
     width: 11.875rem;
     font-size: 2.812rem;
     border: 0;
-    border-radius: .625rem;
+    border-radius: 0.625rem;
     cursor: pointer;
 }
 
@@ -46,7 +46,23 @@ button:active {
     scale: 0.98;
 }
 
-h1{
+i.fa-solid {
+    position: absolute;
+    top: 2.5rem;
+    right: 15rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    width: 2rem;
+    height: 2rem;
+    background: #44354A;
+    color: #FBFBFB;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*Headings*/
+h1 {
     font-size: 3rem;
 }
 
@@ -55,6 +71,7 @@ h3 {
     margin-bottom: 0.3125rem;
 }
 
+/*Containers*/
 .bar {
     background: #44354A;
     border-radius: 2.5rem;
@@ -79,7 +96,6 @@ h3 {
 .total-revenue,
 .total-commission {
     width: 100%;
-    
 }
 
 .revenue-bar,
@@ -88,4 +104,37 @@ h3 {
     border-radius: 5rem;
     line-height: 2;
     font-size: 2.5rem;
+}
+
+
+/*Light mode*/
+body, 
+img,
+button,
+.bar,
+i.fa-solid {
+    transition: background-color 0.5s, color 0.5s, border 0.5s; 
+}
+
+body.light {
+    background: #bfafc6;
+    color: #44354A;
+}
+
+body.light img {
+    border: .625rem solid #977ca4;
+}
+
+body.light button {
+    background: #B86089;
+}
+
+body.light .bar {
+    background: #977ca4;
+    /*background: #a791b1;*/
+}
+
+body.light i.fa-solid {
+    color: #44354A;
+    background: #977ca4;
 }

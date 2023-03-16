@@ -97,3 +97,11 @@ function checkAchievements() {
         console.log(achievementsBadge) // check
     }
 }
+
+//Light and dark mode event listener
+const toggleBtn = document.querySelector('.toggle-mode')
+toggleBtn.addEventListener('click', function() {
+    document.body.classList.toggle("light")
+    toggleBtn.classList.toggle("fa-moon")
+    toggleBtn.classList.toggle("fa-sun")
+})
