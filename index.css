@@ -8,8 +8,6 @@ COLOR: #9E4770
 
 */
 
-
-
 body {
     margin: 0;
     padding: 0;
@@ -20,10 +18,10 @@ body {
 } 
 
 .salesboard {
-    text-align: center;
-    max-width: 58.75rem;
-    margin: 0 auto;
-    padding: 0 15rem;
+   text-align: center;
+   max-width: 58.75rem;
+   margin: 0 auto;
+   padding: 0 2rem 2rem;
 }
 
 img {
@@ -64,13 +62,13 @@ i.fa-solid {
 }
 
 /*Headings*/
-h1{
+h1 {
     font-size: 3rem;
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: .3125rem;
+    margin-bottom: 0.3125rem;
 }
 
 /*Containers*/
@@ -85,7 +83,7 @@ h3 {
 #sales-bar,
 #achievements-bar {
     text-align: left;
-    padding: .3125rem 1.5rem;
+    padding: 0.3125rem 1.5rem;
 }
 
 .product-btn-container,
